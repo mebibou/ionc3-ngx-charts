@@ -15,4 +15,12 @@
     <h2>{{item.name}}</h2>
     <p>{{item.about}}</p>
   </div>
+
+  <ngx-charts-advanced-pie-chart
+      [view]="view"
+      [scheme]="colorScheme"
+      [results]="single"
+      [gradient]="gradient"
+      (select)="onSelect($event)">
+    </ngx-charts-advanced-pie-chart>
 </ion-content>
